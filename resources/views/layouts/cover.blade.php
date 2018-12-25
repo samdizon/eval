@@ -79,5 +79,6 @@
                 @yield('content')
             </div>
         </div>
+        <div id="app"></div>
     </body>
 </html>

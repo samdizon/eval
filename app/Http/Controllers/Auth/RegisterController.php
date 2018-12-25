@@ -52,6 +52,8 @@ class RegisterController extends Controller
             'username' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
+            'organization'=>['required','string','max:255'],
+            'g-recaptcha-response' => 'required|captcha',
         ]);
     }
 
@@ -67,6 +69,7 @@ class RegisterController extends Controller
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'organization'=>$data['organization'],
         ]);
     }
 }
