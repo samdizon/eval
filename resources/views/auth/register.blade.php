@@ -83,8 +83,13 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-outline-primary btn-block">
-                                    {{ __('Register') }}
+                                    {{ __('Sign up') }}
                                 </button>
+                            </div>
+                        </div>
+                        <div class="form-group row py-3">
+                            <div class="col-md-12 text-center text-muted">
+                                By clicking sign up, you agree to <a class="text-info" href="#">terms & conditions</a>
                             </div>
                         </div>
                     </form>
