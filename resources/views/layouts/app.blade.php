@@ -10,15 +10,17 @@
     <link rel="shortcut icon" href="{{{asset('favicon.ico')}}}" type="image/x-icon">
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+     <!-- Scripts -->
+     <script src="{{ asset('js/jquery.min.js') }}" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+     crossorigin="anonymous"></script>
+     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
     @include('layouts.inc')
