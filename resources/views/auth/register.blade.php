@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+@if ($errors->has('g-recaptcha-response'))
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+        <strong>Please prove that you are not robot. </strong>Check captcha fields below.
+    </div>
+@endif
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-5 col-md-6 py-5">
