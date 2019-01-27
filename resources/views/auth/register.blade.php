@@ -20,7 +20,28 @@
                     @endif
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input id="first-name" type="text" class="form-control{{ $errors->has('first-name') ? ' is-invalid' : '' }}" placeholder="First name" name="first-name" value="{{ old('first-name') }}" required autofocus>
 
+                                @if ($errors->has('first-name'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('first-name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input id="last-name" type="text" class="form-control{{ $errors->has('last-name') ? ' is-invalid' : '' }}" placeholder="Last name" name="last-name" value="{{ old('last-name') }}" required autofocus>
+
+                                @if ($errors->has('last-name'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('last-name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" placeholder="Username" name="username" value="{{ old('username') }}" required autofocus>
@@ -32,7 +53,6 @@
                                 @endif
                             </div>
                         </div>
-
                         <div class="form-group row">
                             <div class="col-md-12">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="Email address" name="email" value="{{ old('email') }}" required>
@@ -73,8 +93,7 @@
                                 <input id="password-confirm" type="password" class="form-control" placeholder="Confirm password" name="password_confirmation" required>
                             </div>
                         </div>
-                        
-                        <div class="form-group row">
+                        <div class="form-group row my-4">
                             <div class="form-group col-md-12">
                                 {!! NoCaptcha::renderJs() !!}
                                 {!! NoCaptcha::display() !!}
