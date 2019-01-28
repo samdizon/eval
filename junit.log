@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Browser Test Suite" tests="2" assertions="5" errors="0" failures="0" skipped="0" time="10.084808">
+    <testsuite name="Tests\Browser\LoginTest" file="C:\xampp\htdocs\eval\tests\Browser\LoginTest.php" tests="1" assertions="3" errors="0" failures="0" skipped="0" time="4.762380">
+      <testcase name="testCreateRandomUserAssertCanLoginSeeDashboard" class="Tests\Browser\LoginTest" classname="Tests.Browser.LoginTest" file="C:\xampp\htdocs\eval\tests\Browser\LoginTest.php" line="13" assertions="3" time="4.762380"/>
+    </testsuite>
+    <testsuite name="Tests\Browser\RegistrationTest" file="C:\xampp\htdocs\eval\tests\Browser\RegistrationTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="5.322428">
+      <testcase name="testUserCanRegisterSuccessfully" class="Tests\Browser\RegistrationTest" classname="Tests.Browser.RegistrationTest" file="C:\xampp\htdocs\eval\tests\Browser\RegistrationTest.php" line="16" assertions="2" time="5.322428"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
