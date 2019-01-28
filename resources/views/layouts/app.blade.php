@@ -18,8 +18,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
      <!-- Scripts -->
-     <script src="{{ asset('js/jquery.min.js') }}" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-     crossorigin="anonymous"></script>
+     <script src="{{ asset('js/jquery.min.js') }}" integrity=""  crossorigin="anonymous"></script>
      <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
