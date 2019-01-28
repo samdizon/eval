@@ -21,4 +21,8 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 
 Auth::routes();
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+/* Route::get('/dashboard', 'DashboardController@index')->name('dashboard'); */
+
+Route::post('dashboard', 'DashboardController@updateWizardDisplay');
+
+
