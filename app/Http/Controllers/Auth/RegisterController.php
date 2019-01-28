@@ -55,6 +55,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
             'organization'=>['required','string','max:255'],
+            /* Disable g-recaptcha when performing registration unit test, otherwise it will fail */
             'g-recaptcha-response' => 'required|captcha',
         ]);
     }
