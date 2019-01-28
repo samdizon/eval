@@ -14,7 +14,7 @@ class AddDisplayWizardToDbTableUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('display_wizard')->default(false);
+            $table->boolean('display_wizard')->default(true);
         });
     }
 

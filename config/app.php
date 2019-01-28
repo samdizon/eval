@@ -176,6 +176,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //Laravel collective class
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -228,6 +230,9 @@ return [
         /* Google reCaptcha */
         'NoCaptcha' => Anhskohbo\NoCaptcha\Facades\NoCaptcha::class,
 
+        //Laravel collective
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

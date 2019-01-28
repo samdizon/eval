@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
+use App\User;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -25,4 +27,13 @@ class DashboardController extends Controller
     {
         return view('dashboard');
     }
+
+    public function updateWizardDisplay()
+    {
+        $user = User::find(auth()->user()->id);
+        $user->display_wizard = false;
+        $user->save();
+        return back();
+    }
+    
 }
