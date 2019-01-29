@@ -27,7 +27,12 @@ class RegistrationTest extends DuskTestCase
                     ->value('#password-confirm','adminadmin')
                     ->click('button[type="submit"]')
                     ->assertPathIs('/dashboard')
-                    ->assertSee("You are logged in!"); 
+                    ->assertSee("Settings")
+                    ->assertSee("Evaluation")
+                    ->assertSee("Procedure")
+                    ->assertSee("Survey")
+                    ->assertSee("Team")
+                    ->assertSee("Assessment");
         });
     }
 }

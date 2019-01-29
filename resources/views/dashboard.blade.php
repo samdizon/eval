@@ -15,32 +15,32 @@
                     @endif
 
                     <div class="text-center">
-                        <button type="button" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Left Align">
+                        <a href="{{url('settings')}}" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Settings">
                             <span class="fa fa-sliders fa-4x" aria-hidden="true"></span>
                             <br>Settings
-                        </button>
-                        <button type="button" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Left Align">
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Evaluation">
                             <span class="fa fa-id-badge fa-4x" aria-hidden="true"></span>
                             <br>Evaluation
-                        </button>
-                        <button type="button" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Left Align">
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Procedure">
                             <span class="fa fa-pencil-square-o fa-4x" aria-hidden="true"></span>
                             <br>Procedure
-                        </button>
+                        </a>
                     </div>
                     <div class="text-center">
-                        <button type="button" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Left Align">
+                        <a href="#" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Survey">
                             <span class="fa fa-list-alt fa-4x" aria-hidden="true"></span>
                             <br>Survey
-                        </button>
-                        <button type="button" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Left Align">
+                        </a>
+                        <a type="#" class="btn btn-secondary btn-lg px-5 py-3 m-3 text-light" aria-label="Team">
                             <span class="fa fa-users fa-4x" aria-hidden="true"></span>
                             <br>Team
-                        </button>
-                        <button type="button" class="btn btn-secondary btn-lg px-5 py-3 m-3" aria-label="Left Align">
+                        </a>
+                        <a type="#" class="btn btn-secondary btn-lg px-5 py-3 m-3 text-light" aria-label="Assessment">
                             <span class="fa fa-building-o fa-4x" aria-hidden="true"></span>
                             <br>Assessment
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
