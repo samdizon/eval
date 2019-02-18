@@ -12,17 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if(Auth::check())
+        return view('/dashboard');
+        return view('welcome');
 });
-
-Auth::routes();
-
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-
-Auth::routes();
-
-Route::post('dashboard', 'DashboardController@updateWizardDisplay');
-
 Route::get('/settings', function () {
     return view('settings');
-});
+})->middleware('auth');
+
+Route::get('/settings/department','DepartmentController@index');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+
+Auth::routes();
+Route::post('dashboard', 'DashboardController@updateWizardDisplay');
+
+Route::resource('department', 'DepartmentController');
+

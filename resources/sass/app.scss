@@ -11,6 +11,8 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import "~mdbootstrap/scss/mdb.scss";
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -22,7 +24,7 @@
 }
 
 .btn{
-  line-height: 2.5rem;
+  line-height: 1.5rem;
 }
 // Google recaptcha CSS
 .g-recaptcha>div{

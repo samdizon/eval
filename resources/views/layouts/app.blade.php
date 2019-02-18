@@ -20,6 +20,7 @@
      <!-- Scripts -->
      <script src="{{ asset('js/jquery.min.js') }}" integrity=""  crossorigin="anonymous"></script>
      <script src="{{ asset('js/app.js') }}" defer></script>
+     <script src="{{ asset('js/mdb.min.js') }}" defer></script>
 </head>
 <body>
     @include('layouts.inc')

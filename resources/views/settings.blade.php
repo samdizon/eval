@@ -11,7 +11,7 @@
           <tbody>
             <tr>
               <th scope="row">Departments</th>
-              <td>Edit</td>
+              <td><a href="{{url('settings/department')}}">Edit</a></td>
             </tr>
             <tr>
               <th scope="row">Ranks</th>

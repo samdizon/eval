@@ -35,9 +35,9 @@
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="remember">
+                                <div class="custom-control custom-checkbox">
+                                    <input class="custom-control-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                    <label class="custom-control-label" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
@@ -45,17 +45,20 @@
                         </div>
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-outline-primary btn-block">
+                                <button type="submit" class="btn btn-outline-info waves-effect btn-block">
                                     {{ __('Login') }}
                                 </button>
                             </div>
                         </div>
-                        @if (Route::has('password.request'))
-                            <a class="btn text-info col-md-12 text-right" href="{{ route('password.request') }}">
-                                {{ __('Forgot your password?') }}
-                            </a>
-                        @endif
-                        <div class="col-md-12 text-right">
+                        <div>
+                            @if (Route::has('password.request'))
+                                <a class="text-info col-md-12 text-right d-block py-3" href="{{ route('password.request') }}">
+                                    {{ __('Forgot your password?') }}
+                                </a>
+                            @endif
+                        </div>
+
+                        <div class="col-md-12 text-right pb-3">
                             <a class="text-info" href="{{route('register')}}">{{__('Sign up now')}}</a>
                         </div>
                     </form>

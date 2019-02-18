@@ -101,7 +101,7 @@
                         </div>
                         <div class="form-group row mb-0">
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-outline-primary btn-block">
+                                <button type="submit" class="btn btn-outline-info waves-effect btn-block">
                                     {{ __('Sign up') }}
                                 </button>
                             </div>
