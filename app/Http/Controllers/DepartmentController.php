@@ -51,7 +51,7 @@ class DepartmentController extends Controller
         $department->is_active = $request->input('department-active') == true?1:0;
         $department->save();
         
-        return view('settings.department')->with('success','Department created.');
+        return redirect('settings/department')->with('success','Department created.');
     }
 
     /**
